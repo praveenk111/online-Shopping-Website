@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/LoginPage.css">
+</head>
+<script>
+  function validateForm(){
+    var x = document.forms["signupform"]["fname"].value;
+    if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  var pass1 = document.forms["signupform"]["pwd"].value;
+  var pass2 = document.forms["signupform"]["retypepwd"].value;
+  if(pass1 != pass2){
+    alert("Both passwords are not matching");
+  }
+  }
+</script>
+<body>
+     <div id="id1" class="modal" style="margin-left: 40%; margin-top: 10%;">
+        <form name ="signupform" action="LoginPage.html" onsubmit="return validateForm()" id="login">
+        <h2 style="text-align: center;">Sign up</h2>
+        <img src="images/Clogo.jpeg" width="200px" hight ="200px">
+        <br>
+        <br>
+        <label for="fname"><b>Name:</b></label><br>
+        <input type="text" id="fname" required><br><br>
+        <label ><b>Email:</b></label><br>
+        <input type="email" id="emailid" required><br><br>
+        <label ><b>Password:</b></label><br>
+        <input type="password" name="pwd" required><br><br>
+        <label ><b>Retype Password:</b></label><br>
+        <input type="password" name="retypepwd" required><br><br>
+        <b>Gender:</b><br>
+        <input list="gender" style="width: 30%; height: 10%;" placeholder="select" required>
+        <datalist id="gender">
+          <option value="Male">
+          <option value="Female">
+          <option value="Other">
+        </datalist>
+        <br>
+        <br>
+        <b >Age:</b><br>
+        <input type="radio" name ="age" value = "under 15" required>Under 15<br>
+        <input type="radio" name ="age" value = "above 15">15 or older<br>
+        <br>
+        <b>Address:</b><br><br>
+        <textarea name="message" rows="10" cols="30" style="width: 80%;" required></textarea>
+        <br>
+        <b>Mobile Number:</b><br>
+        <input type="tel" name="number" required><br><br>
+        <button type="submit">Sign Up</button>
+        <br>
+        <span>Already have an account?</span><a href="LoginPage.html" src="sign in">Sign in</a>    
+      </form>
+    </div>
+</body>
+</html>

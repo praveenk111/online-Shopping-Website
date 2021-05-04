@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="css/LoginPage.css">
+    <script>
+        myfunction = () =>{
+        var mail = document.getElementById("Pemail");
+        var Pwd = document.getElementById("pwd");
+ 
+        if(mail.value == "p440@gmail.com" && Pwd.value == "123"){
+        alert("Successfully Logged In");
+        return true;
+            }else{
+                alert("Entered Email ID or Password is Incorrect.TRY AGAIN");
+                return false;
+            }
+        if(mail.value.trim() == "" || Pwd.value.trim() == ""){
+        alert("please enter mail ID or Password");
+        return false;
+        }
+            
+        }
+    
+    </script>
+</head>
+<body>
+    <div id="id1" class="modal" style="margin-left: 40%; margin-top: 10%;">
+        <form action="Homepage.html" id="login" onsubmit=" return myfunction()">
+            <h2 style="text-align: center;">Sign in</h2>
+            <img src="images/Clogo.jpeg" width="200px" hight ="200px">
+            <br>
+            <br>
+            Email ID: <input type="email" name="Pemail" id ="Pemail" required><br>
+            Password: <input type="password" name="pwd" id ="pwd" required><br><br>
+        <button type="Submit" value="Submit" >Sign in</button>
+        <br>
+        <span>Don't have an account?</span><a href="SignUp.html" src="sign up">Sign up</a>
+        </form>
+    </div>
+</body>
+</html>
