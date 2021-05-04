@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Homepage.css">
+    <link rel = "stylesheet" href = "css/Game.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <img src="images/Clogo.jpeg" alt="crazy-cart.ca" width="200px" style="margin-left: 45%;">
+  <div id = "nav">
+  <ul>
+    <li><a href="Homepage.html">Home</a></li>
+    <li><a href="mobiles.html">Mobiles</a></li>
+    <li><a href="#">Best Seller</a></li>
+    <li><a href="fashion.html">Fashion</a></li>
+    <li><a href="electronics.html">Electronics</a></li>
+    <li><a href="#">Home & Kitchen</a></li>
+    <li><a href="#">Computers</a></li>
+    <li><a href="Game.html">Game</a></li>
+    <li><a href="Contactus.html">Contact Us</a></li>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit" value="Submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </ul>
+  </div>
+  <div id = "Main1">
+  <h1>Hangman<br>
+    GUESS YOUR FAVOURITE ITEM!</h1>
+    <script src = "Game.js"></script>
+  <p id="field"></p>
+  <form name="rateformular">
+  <input name="ratezeichen" type="text" size="5" maxlength="1">
+  <input name="ratebutton" type="button" value="Guess" onClick="pruefeZeichen()">
+  
+  <p id="gerateneBuchstaben">Wrong Letters:</p>
+  <img src="http://www.writteninpencil.de/Projekte/Hangman/hangman0.png" id="hangman"><br />
+  <input name="refresh" type="button" value="New Game" onClick="location.reload()">
+  </form>
+  </div>
+
+
+  <!-- Site footer -->
+  <footer class="footer-distributed" style="margin-bottom: auto;margin-top: 70px;">
+
+    <div class="footer-right">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+    <div class="footer-left">
+
+      <p class="footer-links">
+        <a class="link-1" href="#">Home</a>
+
+        <a href="#">Blog</a>
+
+        <a href="#">Pricing</a>
+
+        <a href="#">About</a>
+
+        <a href="#">Faq</a>
+
+        <a href="#">Contact</a>
+      </p>
+
+      <p>Company Name &copy; 2015</p>
+    </div>
+
+  </footer>
+</body>
+</html>

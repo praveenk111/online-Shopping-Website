@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Productcat.js"></script>
+    <link rel="stylesheet" href="css/Homepage.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color: rgb(80, 4, 4);
+        }
+        #container {
+            background-color: white;
+            content: '';
+            display: block;
+            clear: left;
+        }
+
+        #product-thumbnail p {
+            list-style-position: inside;
+            /*permits aligning the bullet points towards the interior*/
+        }
+
+        #product-thumbnail img {
+            margin-left: 50px;
+            width: 200px;
+            /* the natural size is already 150px */
+
+        }
+
+        #product-thumbnail {
+            background-color: white;
+            float: left;
+        }
+
+        #product-thumbnail input[type = button] {
+            margin-left: 100px;
+            text-align: center;
+        }
+
+        #product-thumbnail {
+            border: 1px solid rgb(100, 3, 3);
+            width: 250px;
+            height: 420px;
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+            /*required for absolute position links in the bottom-right corner*/
+            box-shadow: 5px 5px;
+        }
+
+        #product-thumbnail p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/Clogo.jpeg" alt="crazy-cart.ca" width="200px" style="margin-left: 45%;">
+    <div id="nav">
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+    <li><a href="mobiles.html">Mobiles</a></li>
+    <li><a href="#">Best Seller</a></li>
+    <li><a href="fashion.html">Fashion</a></li>
+    <li><a href="electronics.html">Electronics</a></li>
+    <li><a href="#">Home & Kitchen</a></li>
+    <li><a href="#">Computers</a></li>
+    <li><a href="Game.html">Game</a></li>
+    <li><a href="Contactus.html">Contact Us</a></li>
+            <div class="search-container">
+                <form action="">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit" value="Submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </ul>
+    </div>
+    <!-- <div class="product">
+        <img src="products_images/white_jersey.jpg" alt="White Jersey">
+        <p class="name">White Jersey</p>
+        <p class="description">Manchester United Away Jersey, white, sponsored by Chevrolet</p>
+        <p class="price">$49.99</p>
+       <button class="button_grey">BUY</button>
+    </div>     -->
+    <div id="container">
+        <div id="product-thumbnail">
+            <img src="imagess/white_j.jpg" style="width: 150px;height: 200px;">
+            <p id="name1"></p>
+            <p id="des1"></p>
+            <p id="pic1"></p>
+            <p id="price1" style="color: red;"></p>
+            <input type="button" onclick="location.href='http://127.0.0.1:5500/Payment.html';" value="BUY" />
+        </div>
+        <div id="product-thumbnail">
+            <img src="imagess/yellow_j.jpg" style="width: 150px;height: 200px;">
+            <p id="name2"></p>
+            <p id="des2"></p>
+            <p id="pic2"></p>
+            <p id="price2" style="color: red;"></p>
+            <input type="button" onclick="location.href='http://127.0.0.1:5500/Payment.html';" value="BUY" />
+        </div>
+        <div id="product-thumbnail">
+            <img src="imagess/blue_j.jpg" style="width: 150px;height: 200px;">
+            <p id="name3"></p>
+            <p id="des3"></p>
+            <p id="pic3"></p>
+            <p id="price3" style="color: red;"></p>
+            <input type="button" onclick="location.href='http://127.0.0.1:5500/Payment.html';" value="BUY" />
+        </div>
+        <div id="product-thumbnail">
+            <img src="imagess/red_j.jpg" style="width: 150px;height: 200px;">
+            <p id="name4"></p>
+            <p id="des4"></p>
+            <p id="pic4"></p>
+            <p id="price4" style="color: red;"></p>
+            <input type="button" onclick="location.href='http://127.0.0.1:5500/Payment.html';" value="BUY" />
+        </div>
+        <div id="product-thumbnail">
+            <img src="imagess/black_j.jpg" style="width: 150px;height: 200px;">
+            <p id="name5"></p>
+            <p id="des5"></p>
+            <p id="pic5"></p>
+            <p id="price5" style="color: red;"></p>
+            <input type="button" onclick="location.href='http://127.0.0.1:5500/Payment.html';" value="BUY" />
+        </div>
+        <div id="product-thumbnail">
+            <img src="imagess/black_j.jpg" style="width: 150px;height: 200px;">
+            <p id="name6"></p>
+            <p id="des6"></p>
+            <p id="pic6"></p>
+            <p id="price6" style="color: red;"></p>
+            <input type="button" onclick="location.href='http://127.0.0.1:5500/Payment.html';" value="BUY" />
+        </div>
+        <div id="product-thumbnail">
+            <img src="imagess/white_j.jpg" style="width: 150px;height: 200px;">
+            <p id="name7"></p>
+            <p id="des7"></p>
+            <p id="pic7"></p>
+            <p id="price7" style="color: red;"></p>
+            <input type="button" onclick="location.href='http://127.0.0.1:5500/Payment.html';" value="BUY" />
+        </div>
+        <div id="product-thumbnail">
+            <img src="imagess/blue_j.jpg" style="width: 150px;height: 200px;">
+            <p id="name8"></p>
+            <p id="des8"></p>
+            <p id="pic8"></p>
+            <p id="price8" style="color: red;"></p>
+            <input type="button" onclick="location.href='http://127.0.0.1:5500/Payment.html';" value="BUY" />
+        </div>
+        <div id="product-thumbnail">
+            <img src="imagess/red_j.jpg" style="width: 150px;height: 200px;">
+            <p id="name9"></p>
+            <p id="des9"></p>
+            <p id="pic9"></p>
+            <p id="price9" style="color: red;"></p>
+            <input type="button" onclick="location.href='http://127.0.0.1:5500/Payment.html';" value="BUY" />
+        </div>
+        <div id="product-thumbnail">
+            <img src="imagess/yellow_j.jpg" style="width: 150px;height: 200px;">
+            <p id="name10"></p>
+            <p id="des10"></p>
+            <p id="pic10"></p>
+            <p id="price10" style="color: red;"></p>
+            <input type="button" onclick="location.href='http://127.0.0.1:5500/Payment.html';" value="BUY" />
+        </div>
+    </div>
+    
+    <footer class="footer-distributed" style="margin-top: 65%;">
+
+        <div class="footer-right">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a class="link-1" href="#">Home</a>
+
+                <a href="#">Blog</a>
+
+                <a href="#">Pricing</a>
+
+                <a href="#">About</a>
+
+                <a href="#">Faq</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <p>Company Name &copy; 2015</p>
+        </div>
+
+    </footer>
+
+    
+
+    <script>
+        var x = document.getElementById("name1");
+        x.innerHTML = products[0].name;
+        var x1 = document.getElementById("des1");
+        x1.innerHTML = products[0].description;
+        var x2 = document.getElementById("pic1");
+        x2.innerHTML = products[0].pic;
+        var x3 = document.getElementById("price1");
+        x3.innerHTML = products[0].price;
+
+        var y = document.getElementById("name2");
+        y.innerHTML = products[1].name;
+        var y1 = document.getElementById("des2");
+        y1.innerHTML = products[1].description;
+        var y2 = document.getElementById("pic2");
+        y2.innerHTML = products[1].pic;
+        var y3 = document.getElementById("price2");
+        y3.innerHTML = products[1].price;
+
+        var z = document.getElementById("name3");
+        z.innerHTML = products[2].name;
+        var z1 = document.getElementById("des3");
+        z1.innerHTML = products[2].description;
+        var z2 = document.getElementById("pic3");
+        z2.innerHTML = products[2].pic;
+        var z3 = document.getElementById("price3");
+        z3.innerHTML = products[2].price;
+
+        var a = document.getElementById("name4");
+        a.innerHTML = products[3].name;
+        var a1 = document.getElementById("des4");
+        a1.innerHTML = products[3].description;
+        var a2 = document.getElementById("pic4");
+        a2.innerHTML = products[3].pic;
+        var a3 = document.getElementById("price4");
+        a3.innerHTML = products[3].price;
+
+        var b = document.getElementById("name5");
+        b.innerHTML = products[4].name;
+        var b1 = document.getElementById("des5");
+        b1.innerHTML = products[4].description;
+        var b2 = document.getElementById("pic5");
+        b2.innerHTML = products[4].pic;
+        var b3 = document.getElementById("price5");
+        b3.innerHTML = products[4].price;
+
+        var c = document.getElementById("name6");
+        c.innerHTML = products[5].name;
+        var c1 = document.getElementById("des6");
+        c1.innerHTML = products[5].description;
+        var c2 = document.getElementById("pic6");
+        b2.innerHTML = products[5].pic;
+        var c3 = document.getElementById("price6");
+        c3.innerHTML = products[5].price;
+
+        var d = document.getElementById("name7");
+        d.innerHTML = products[6].name;
+        var d1 = document.getElementById("des7");
+        d1.innerHTML = products[6].description;
+        var d2 = document.getElementById("pic7");
+        d2.innerHTML = products[6].pic;
+        var d3 = document.getElementById("price7");
+        d3.innerHTML = products[6].price;
+
+        var e = document.getElementById("name8");
+        e.innerHTML = products[7].name;
+        var e1 = document.getElementById("des8");
+        e1.innerHTML = products[7].description;
+        var e2 = document.getElementById("pic8");
+        e2.innerHTML = products[7].pic;
+        var e3 = document.getElementById("price8");
+        e3.innerHTML = products[7].price;
+
+        var f = document.getElementById("name9");
+        f.innerHTML = products[8].name;
+        var f1 = document.getElementById("des9");
+        f1.innerHTML = products[8].description;
+        var f2 = document.getElementById("pic9");
+        f2.innerHTML = products[8].pic;
+        var f3 = document.getElementById("price9");
+        f3.innerHTML = products[8].price;
+
+        var g = document.getElementById("name10");
+        g.innerHTML = products[9].name;
+        var g1 = document.getElementById("des10");
+        g1.innerHTML = products[9].description;
+        var g2 = document.getElementById("pic10");
+        g2.innerHTML = products[9].pic;
+        var g3 = document.getElementById("price10");
+        g3.innerHTML = products[9].price;
+
+    </script>
+
+
+      
+</body>
+
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Homepage.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+<body>
+  <img src="images/Clogo.jpeg" alt="crazy-cart.ca" width="200px" style="margin-left: 45%;">
+  <i class="fa fa-shopping-cart" style="font-size:48px;color:black;float: right; margin-right: 20px;margin-top: 20px;"></i>
+  <div id = "nav">
+  <ul>
+    <li><a href="Homepage.html">Home</a></li>
+    <li><a href="mobiles.html">Mobiles</a></li>
+    <li><a href="#">Best Seller</a></li>
+    <li><a href="fashion.html">Fashion</a></li>
+    <li><a href="electronics.html">Electronics</a></li>
+    <li><a href="#">Home & Kitchen</a></li>
+    <li><a href="#">Computers</a></li>
+    <li><a href="Game.html">Game</a></li>
+    <li><a href="Contactus.html">Contact Us</a></li>
+    <div class="search-container">
+      <form action="#">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit" value="Submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </ul>
+  </div>
+  <div class="w3-content w3-display-container" style="padding-left: 30px; padding-top: 10px;margin-left: 20%;">
+    <img class="mySlides" src="images/img1.jpg" style="width:70%;height: 50%;">
+    <img class="mySlides" src="images/img2.jpg" style="width:70%;height: 50%;">
+    <img class="mySlides" src="images/img3.jpg" style="width:70%;height: 50%;">
+    <img class="mySlides" src="images/img4.jpg" style="width:70%;height: 50%;">
+    <img class="mySlides" src="images/img5.jpg" style="width:70%;height: 50%;">
+    <img class="mySlides" src="images/img6.jpg" style="width:70%;height: 50%;">
+    <img class="mySlides" src="images/img7.jpg" style="width:70%;height: 50%;">
+  </div>
+    <!-- Site footer -->
+    <footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="#">Home</a>
+
+					<a href="#">Blog</a>
+
+					<a href="#">Pricing</a>
+
+					<a href="#">About</a>
+
+					<a href="#">Faq</a>
+
+					<a href="#">Contact</a>
+				</p>
+
+				<p>Company Name &copy; 2015</p>
+			</div>
+
+		</footer>
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+</body>
+</html>
