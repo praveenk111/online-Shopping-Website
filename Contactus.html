@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Homepage.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        /* overflow: hidden; */
+        font-family: Arial, Helvetica, sans-serif;}
+      * {box-sizing: border-box;}
+      
+      .container input[type=text],input[type = email] ,select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=submit] {
+        background-color: #050706;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .container{
+        margin: auto;
+        width: 70%;
+        border: black solid 2px;
+      
+      }
+      input[type=submit]:hover {
+        background-color: #050505;
+      }
+      
+      .container {
+        border-radius: 5px;
+        background-color: #524e4e;
+        padding: 20px;
+      }
+      </style>
+  </head>
+<body>
+  <img src="images/Clogo.jpeg" alt="crazy-cart.ca" width="200px" style="margin-left: 45%;">
+  <div id = "nav">
+  <ul>
+    <li><a href="Homepage.html">Home</a></li>
+    <li><a href="mobiles.html">Mobiles</a></li>
+    <li><a href="#">Best Seller</a></li>
+    <li><a href="fashion.html">Fashion</a></li>
+    <li><a href="electronics.html">Electronics</a></li>
+    <li><a href="#">Home & Kitchen</a></li>
+    <li><a href="#">Computers</a></li>
+    <li><a href="Game.html">Game</a></li>
+    <li><a href="Contactus.html">Contact Us</a></li>
+    <div class="search-container">
+      
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit" value="Submit"><i class="fa fa-search"></i></button>
+    </div>
+  </ul>
+  </div>
+
+
+<h3 style="text-align: center;">Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="email">Email ID</label>
+    <input type="email" id="email" name="emailid" placeholder="Your email..">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your First name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="customer">Are you an Existing Customer?</label>
+    <br>
+    <input type="radio"  name="yes" value="yes1">
+    <label for="male">Yes</label><br>
+    <input type="radio"  name="yes" value="No1">
+    <label for="female">No</label><br>
+    <br>
+    <label for="msg">Message:</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="info">Additional Information:</label>
+    <textarea id="info" name="addition information" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<!-- Site footer -->
+<footer class="footer-distributed">
+
+  <div class="footer-right">
+
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-github"></i></a>
+
+  </div>
+
+  <div class="footer-left">
+
+    <p class="footer-links">
+      <a class="link-1" href="#">Home</a>
+
+      <a href="#">Blog</a>
+
+      <a href="#">Pricing</a>
+
+      <a href="#">About</a>
+
+      <a href="#">Faq</a>
+
+      <a href="#">Contact</a>
+    </p>
+
+    <p>Company Name &copy; 2015</p>
+  </div>
+
+</footer>
+
+</body>
+</html>
+
+</body>
+</html>
