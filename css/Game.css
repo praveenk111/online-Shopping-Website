@@ -1,0 +1,23 @@
+
+text {
+	border: 2px solid #999;
+	font-family: Helvetica, sans-serif;
+	color: #999;
+}
+
+#field {
+	font-family: 'Permanent Marker', 'cursive';
+	font-size: 2.0em;
+}
+
+h1 {
+	font-family: 'Permanent Marker', 'cursive';
+}
+#Main1{
+	margin-top: 1000px;
+	margin: auto;
+	border: 2px solid black;
+	text-align: center;
+	width: 40%;
+	font-family: Helvetica, sans-serif;
+}
